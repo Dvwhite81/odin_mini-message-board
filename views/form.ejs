@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <a href='/'>Home</a>
+    <h1><%= title %></h1>
+    <form method="POST" action="/new">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required />
+      </div>
+      <button type="submit">Add Message</button>
+    </form>
+  </body>
+</html>

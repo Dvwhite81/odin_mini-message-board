@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <a href="/new">Create New Message</a>
+    <h1><%= title %></h1>
+    <ul>
+      <% messages.map((message) => { %>
+      <li>
+        <a href="/message/<%= messages.indexOf(message) %>">Open</a>
+        <span><%= message.user %></span>
+        <span><%= message.added.toLocaleString() %></span>
+        <p><%= message.text %></p>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
